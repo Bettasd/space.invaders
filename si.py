@@ -3,18 +3,26 @@ import pygame.gfxdraw
 
 
 def main():
-    # pygame inicializálás
     pygame.init()
 
-    # ablak megnyitás
     window = pygame.display.set_mode((600, 600))
     pygame.display.set_caption('példaprogram')
 
-    # színek
-    red = pygame.Color(255, 0, 0)
-    green = pygame.Color(0, 255, 0)
-    blue = pygame.Color(0, 0, 255)
-
+    pygame.gfxdraw.rectangle(felület, téglalap, szín)
     x = 100
     y = 100
     r = 50
+
+    while fut_a_program:
+        event = pygame.event.wait()
+        if event.type == pygame.VALAMI:
+        elif event.type == pygame.MASIK:
+
+    quit = False
+    while not quit:
+        event = pygame.event.wait()
+        if event.type == pygame.QUIT:
+            quit = True
+
+
+    pygame.quit()
